@@ -25,6 +25,45 @@ main .area aside{
     width:30rem;
 }
 
+main nav .logo{
+    width:10rem;
+    height:3.3rem;
+    background-image:url("../imagens/logo-black.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:1rem 0 3rem 1rem;
+    cursor:pointer;;
+}
+
+main nav li a{
+    color:var(--primary);
+    display:flex;
+    align-items: center;
+    gap:1.5rem;
+    font-size:1.7rem;
+    text-decoration: none;
+    padding:1rem;
+    border-radius:1rem;
+    cursor:pointer;
+    transition:all ease .5s;
+    margin:1rem 0;
+}
+
+main nav a span{
+    display:none;
+}
+
+main nav li a:hover{
+    background-color:var(--secondary-foreground)
+}
+
+@media(prefers-color-scheme: dark){
+    main nav .logo{
+        background-image:url("../imagens/logo-white.png");
+    }
+    
+}
+
 @media(width > 900px){
     main{
         padding:2rem 0 0 6rem;
@@ -43,6 +82,10 @@ main .area aside{
         display:block;
     }
 
+    main nav .logo{
+        display:none;
+    }
+
 }
 
 @media(width > 1024px){
@@ -52,5 +95,9 @@ main .area aside{
 
     main nav{
         width:24rem;
+    }
+
+    main nav a span{
+        display:block;
     }
 }
