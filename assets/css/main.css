@@ -57,6 +57,10 @@ main nav li a:hover{
     background-color:var(--secondary-foreground)
 }
 
+main nav li a.active{
+    font-weight:bold;
+}
+
 @media(prefers-color-scheme: dark){
     main nav .logo{
         background-image:url("../imagens/logo-white.png");
@@ -95,6 +99,10 @@ main nav li a:hover{
 
     main nav{
         width:24rem;
+    }
+
+    main nav .logo{
+        display:block;
     }
 
     main nav a span{
