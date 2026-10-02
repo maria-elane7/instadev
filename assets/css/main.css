@@ -18,6 +18,7 @@ main .area{
 
 main .area .feed-content{
     width:100%;
+    position:relative;
 }
 
 main .area aside{
